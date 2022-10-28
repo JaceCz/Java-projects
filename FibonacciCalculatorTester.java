@@ -18,7 +18,7 @@ public class FibonacciCalculatorTester {
         char c;
 
         do {
-            System.out.println("\nPlease make a selection: \n Display Fibonacci numbers upto a value (A).\n Print n Fibonacci numbers (B).\n Check if a number is Fibonacci (C). \n Please press Q to quit (Q).");
+            System.out.println("\nPlease make a selection: \n \n Display Fibonacci numbers upto a value (A).\n Print n Fibonacci numbers (B).\n Check if a number is Fibonacci (C). \n Please press Q to quit (Q).");
             System.out.print("\nChoice: ");
             c = Character.toUpperCase(input.next().charAt(0));
             switch (c) {
@@ -56,7 +56,6 @@ public class FibonacciCalculatorTester {
                     }
                     break;
             }
-
         }
         while (c != 'Q') ;
         System.out.println("\nHave an Awesome Day!");

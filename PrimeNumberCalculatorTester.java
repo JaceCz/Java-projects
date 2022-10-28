@@ -17,7 +17,7 @@ public class PrimeNumberCalculatorTester {
         char c;
 
         do {
-            System.out.println("\nPlease make a selection: \n Prime numbers upto a value (A).\n Primes between 2 numbers (B).\n Unique Prime factorization of a number (C). \n Unique Prime factorization of all numbers input by user (D).");
+            System.out.println("\nPlease make a selection:\n \n Prime numbers upto a value (A).\n Primes between 2 numbers (B).\n Unique Prime factorization of a number (C).\n Please press Q to quit (Q).");
             System.out.print("\nChoice: ");
             c = Character.toUpperCase(input.next().charAt(0));
             switch (c) {
@@ -26,7 +26,7 @@ public class PrimeNumberCalculatorTester {
                     System.out.println("Enter a number to get the primes: ");
                     int num = input.nextInt();
                     for (int i = 2; i <= num; i++) {
-                        System.out.printf("\n %d %s", i, pnc.isPrime(i) ? "PRIME :)": "NOT A PRIME :(");//: pnc.getUniquePrimeFactorization(i));
+                        System.out.printf("\n %d %s", i, pnc.isPrime(i) ? "PRIME :)": "NOT A PRIME :(");
                     }
                     break;
 
@@ -50,16 +50,6 @@ public class PrimeNumberCalculatorTester {
                     int num1 = input.nextInt();
                     System.out.print(pnc.getUniquePrimeFactorization(num1) + "\n");
                     break;
-
-                case 'D':
-
-                    System.out.println("Enter a number to get the prime factorization until that number:  ");
-                    int num2 = input.nextInt();
-                    for (int i = 2; i < num2; i++) {
-                        System.out.printf("\n%s", pnc.getUniquePrimeFactorization(i));
-                    }
-                    break;
-
                     }
             }
             while (c != 'Q') ;

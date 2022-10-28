@@ -47,72 +47,9 @@ public class PrimeNumberCalculator {
     }
 }
 
-     /**   String result = "";
-        int a = 1;
-
-        while (a <= number) {
-
-            if (number % a == 0) {
-                int b = 1, c = 0;
-                while (b <= a) {
-                    if (a % b == 0)
-                        c ++;
-                    b ++;
-                }
-
-                if (c == 2) {
-                    result = result + a + " * ";
-                }
-            }
-            a++;
-        }
-        return result;
-    }
-
-}
-
-
-    /**
-
-  /**
 
 
 
 
 
 
-
-
-
-/**  String result = " ";
-
- while (number % 2 == 0) {
- System.out.print(2 + " ");
- number /= 2;
- }
-
- for (int i = 3; i <= Math.sqrt(number); i += 2) {
- while (number % i == 0) {
- System.out.print(i + " * ");
- number = number / i;
- }
- }
- if (number > 2)
- result += "*" + number + "*";
- return result;
- }
-
-
- /**  for ( int i = 2; i < number; i++) {
- while(number % i == 0) {
- System.out.println(i + "");
- number = number/i;
- }
-
- }
-
- if (number > 2) {
- System.out.println(number);
- }
-
- **/
